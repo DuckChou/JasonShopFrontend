@@ -7,7 +7,7 @@ export const getProducts = createAsyncThunk(
   'products/getProducts',
   async (keyword) => {
     try {
-      const response = await axios.get(`/api/products${keyword}/`);
+      const response = await axios.get(`http://jasonshop.space/api/products${keyword}/`);
       console.log(response.data);
       return response.data;
     } catch (error) {
