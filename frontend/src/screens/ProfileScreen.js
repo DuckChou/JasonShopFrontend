@@ -46,7 +46,7 @@ function ProfileScreen() {
             }`,
           },
         };
-        const response = await axios.get(`/api/orders`, config);
+        const response = await axios.get(`https://jasonshop.space/api/orders`, config);
 
         const newOrders = response.data.map((order) => ({
           _id: order._id,

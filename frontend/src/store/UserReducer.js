@@ -11,7 +11,7 @@ export const login = createAsyncThunk('login', async ({ email, password }) => {
     };
 
     const response = await axios.post(
-      `/api/users/login`,
+      `https://jasonshop.space/api/users/login`,
       {
         username: email,
         password: password,
@@ -40,7 +40,7 @@ export const register = createAsyncThunk(
       console.log(email, password, name);
 
       const response = await axios.post(
-        `/api/users/register`,
+        `https://jasonshop.space/api/users/register`,
         {
           name: name,
           email: email,
@@ -72,7 +72,7 @@ export const updateProfile = createAsyncThunk(
       };
 
       const response = await axios.put(
-        `/api/users/profile/update`,
+        `https://jasonshop.space/api/users/profile/update`,
         {
           name: name,
           email: email,

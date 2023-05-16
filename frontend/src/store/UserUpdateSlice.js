@@ -14,7 +14,7 @@ export const getUserById = createAsyncThunk('admin/getUserById', async (id) => {
         }`,
       },
     };
-    const response = await axios.get(`/api/users/${id}`, config);
+    const response = await axios.get(`https://jasonshop.space/api/users/${id}`, config);
 
     return response.data;
   } catch (error) {
@@ -37,7 +37,7 @@ export const updateUserById = createAsyncThunk(
         },
       };
       const response = await axios.put(
-        `/api/users/${id}/update`,
+        `https://jasonshop.space/api/users/${id}/update`,
         {
           name:name,
           email:email,

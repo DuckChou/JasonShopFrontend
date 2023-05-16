@@ -52,7 +52,7 @@ function ProjectEditScreen() {
         };
 
         const { data } = await axios.post(
-          '/api/products/upload',
+          'https://jasonshop.space/api/products/upload',
           uploadImage,
           config
         );

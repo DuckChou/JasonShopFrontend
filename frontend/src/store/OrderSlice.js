@@ -14,7 +14,7 @@ export const getOrder = createAsyncThunk('order/getOrder', async (id) => {
         }`,
       },
     };
-    const response = await axios.get(`/api/orders/${id}`, config);
+    const response = await axios.get(`https://jasonshop.space/api/orders/${id}`, config);
 
     return response.data;
   } catch (error) {

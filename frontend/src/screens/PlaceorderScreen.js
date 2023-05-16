@@ -42,7 +42,7 @@ function PlaceOrderScreen() {
         },
       };
       const response = await axios.post(
-        '/api/orders/addOrder',
+        'https://jasonshop.space/api/orders/addOrder',
         {
           orderItems: cart.cartItems,
           shippingAddress: cart.shippingAddress,

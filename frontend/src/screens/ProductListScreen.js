@@ -44,7 +44,7 @@ function ProductListScreen() {
           }`,
         },
       };
-      const response = await axios.delete(`/api/products/${id}/delete`, config);
+      const response = await axios.delete(`https://jasonshop.space/api/products/${id}/delete`, config);
       dispatch(getProducts(''));
 
       return response.data;
@@ -74,7 +74,7 @@ function ProductListScreen() {
           }`,
         },
       };
-      const response = await axios.post(`/api/products/addProduct`, {}, config);
+      const response = await axios.post(`https://jasonshop.space/api/products/addProduct`, {}, config);
 
       navigate(`/admin/product/${response.data._id}/edit`);
     } catch (error) {

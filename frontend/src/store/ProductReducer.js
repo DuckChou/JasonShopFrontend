@@ -7,7 +7,7 @@ export const getProduct = createAsyncThunk(
   'product/getProduct',
   async (id) => {
     try {
-      const response = await axios.get(`/api/products/${id}/`);
+      const response = await axios.get(`https://jasonshop.space/api/products/${id}/`);
       return response.data;
     } catch (error) {
       throw new Error(error);
@@ -31,7 +31,7 @@ export const updateProduct = createAsyncThunk(
       };
       const response = await axios.put(
         // @ts-ignore
-        `/api/products/${product.id}/update`, 
+        `https://jasonshop.space/api/products/${product.id}/update`, 
         product,
         config
       );

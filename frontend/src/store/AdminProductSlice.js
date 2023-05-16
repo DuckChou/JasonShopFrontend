@@ -14,7 +14,7 @@ export const getAllUsers = createAsyncThunk('admin/getAllUsers', async () => {
         }`,
       },
     };
-    const response = await axios.get(`/api/users`, config);
+    const response = await axios.get(`https://jasonshop.space/api/users`, config);
 
     return response.data;
   } catch (error) {

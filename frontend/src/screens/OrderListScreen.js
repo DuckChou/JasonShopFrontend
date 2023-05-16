@@ -25,7 +25,7 @@ function OrderListScreen() {
         },
       };
 
-      const response = await axios.get('/api/orders/allOrders/', config);
+      const response = await axios.get('https://jasonshop.space/api/orders/allOrders/', config);
       setOrders(response.data);
       setLoading(false);
     } catch (error) {
@@ -51,7 +51,7 @@ function OrderListScreen() {
         },
       };
 
-      await axios.put(`/api/orders/${id}/deliver`, {}, config);
+      await axios.put(`https://jasonshop.space/api/orders/${id}/deliver`, {}, config);
       getOrders();
     } catch (error) {
       setError(error.message);

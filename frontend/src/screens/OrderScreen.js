@@ -52,7 +52,7 @@ function PlaceOrderScreen() {
           }`,
         },
       };
-      const response = await axios.put(`/api/orders/${id}/pay`, {}, config);
+      const response = await axios.put(`https://jasonshop.space/api/orders/${id}/pay`, {}, config);
       dispatch(getOrder(id));
       return response.data;
     } catch (error) {

@@ -43,7 +43,7 @@ function UserListScreen() {
           }`,
         },
       };
-      const response = await axios.put(`/api/users/${id}/delete`, {}, config);
+      const response = await axios.put(`https://jasonshop.space/api/users/${id}/delete`, {}, config);
       dispatch(getAllUsers());
 
       return response.data;
