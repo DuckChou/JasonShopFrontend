@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "proxy": "http://3.93.186.207",
+  "proxy": "http://jasonshop.space",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
